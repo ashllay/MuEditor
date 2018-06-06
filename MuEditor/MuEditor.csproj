@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3E65B885-543A-45CF-8DEC-E15901A1003F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MuEditor</RootNamespace>
+    <AssemblyName>MuEditor</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>MuEditor.ico</ApplicationIcon>
+    <StartupObject>MuEditor.Program</StartupObject>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attribute.cs" />
+    <Compile Include="CharPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CharPanel.Designer.cs">
+      <DependentUpon>CharPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassNumber.cs" />
+    <Compile Include="CMagicDamage.cs" />
+    <Compile Include="ComboBoxItem.cs" />
+    <Compile Include="DrawingUnit.cs" />
+    <Compile Include="EquipCustomSet.cs" />
+    <Compile Include="EquipImageCache.cs" />
+    <Compile Include="EquipItem.cs" />
+    <Compile Include="EquipItemType.cs" />
+    <Compile Include="EquipPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EquipPanel.Designer.cs">
+      <DependentUpon>EquipPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquipProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EquipProperty.Designer.cs">
+      <DependentUpon>EquipProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBase.Designer.cs">
+      <DependentUpon>frmBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGuild.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGuild.Designer.cs">
+      <DependentUpon>frmGuild.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGuildUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGuildUser.Designer.cs">
+      <DependentUpon>frmGuildUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInitEquip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInitEquip.Designer.cs">
+      <DependentUpon>frmInitEquip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMasterLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMasterLevel.Designer.cs">
+      <DependentUpon>frmMasterLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUser.Designer.cs">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserAdd.Designer.cs">
+      <DependentUpon>frmUserAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemClass.cs" />
+    <Compile Include="ITEM_ATTRIBUTE.cs" />
+    <Compile Include="ITEM_SOCKETITEM.cs" />
+    <Compile Include="Library\Common\IniClass.cs" />
+    <Compile Include="PentagramPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PentagramPanel.Designer.cs">
+      <DependentUpon>PentagramPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SkillClass.cs" />
+    <Compile Include="SKILL_SQL_GS.cs" />
+    <Compile Include="SocketItemClass.cs" />
+    <Compile Include="StatuNumber.cs" />
+    <Compile Include="TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="T_CashShop_Point.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="T_CashShop_Point.Designer.cs">
+      <DependentUpon>T_CashShop_Point.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EquipEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EquipEditor.Designer.cs">
+      <DependentUpon>EquipEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucBase.Designer.cs">
+      <DependentUpon>ucBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils.cs" />
+    <Compile Include="Validator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EquipProperty.resx">
+      <DependentUpon>EquipProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBase.resx">
+      <DependentUpon>frmBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGuild.resx">
+      <DependentUpon>frmGuild.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGuildUser.resx">
+      <DependentUpon>frmGuildUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInitEquip.resx">
+      <DependentUpon>frmInitEquip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMasterLevel.resx">
+      <DependentUpon>frmMasterLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUser.resx">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserAdd.resx">
+      <DependentUpon>frmUserAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="T_CashShop_Point.resx">
+      <DependentUpon>T_CashShop_Point.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
